@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import myImage from './my-image.jpg'; // Importing the image from the src folder
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* Replacing React logo with my image */}
+        <img src={myImage} alt="replaced logo" className="App-logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My image displayed
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
